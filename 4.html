@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let data = {
+            id: 1,
+            name: "Leanne Graham",
+            username: "Bret",
+            email: "Sincere@april.biz",
+            address: {
+                street: "Kulas Light",
+                suite: "Apt. 556",
+                city: "Gwenborough",
+                zipcode: "92998-3874",
+            },
+            phone: "1-770-736-8031 x56442",
+            website: "hildegard.org",
+        }
+
+        let data2 = {
+            ...data,
+            name: "Dynno Yohanis Ottu",
+            email: "dynnoottu968@gmail.com",
+            hobby: "Berenang, Bermain game, membaca"
+        }
+
+        console.log(data2)
+
+        const {
+            address: {
+                street,
+                city
+            }
+        } = data;
+        console.log(street)
+        console.log(city)
+    </script>
+</body>
+
+</html>
