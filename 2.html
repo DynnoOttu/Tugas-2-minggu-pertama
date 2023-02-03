@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         const bahasaIndonesia = 69
         const bahasaInggis = 69
-        const matematika = 200
-        const ipa = 0
+        const matematika = 10
+        const ipa = 22
 
-        if(bahasaIndonesia >= 0 && bahasaInggis >= 0 && matematika >= 0 && ipa >= 0){
-            if(bahasaIndonesia <= 100  && bahasaInggis <= 100 && matematika <= 100 && ipa <= 100 ){
-               const totalNilai = (bahasaIndonesia + bahasaInggis + matematika + ipa) / 4 //Menunakan urutan operasi matematika
-               if(totalNilai >= 90){
-                document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = A</p>`)
-               } else if(totalNilai >= 80){
-                document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = B</p>`)
-               } else if(totalNilai >= 79){
-                document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = C</p>`)
-               }else if(totalNilai >= 69){
-                document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = D</p>`)
-               } else {
-                document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = E</p>`)
-               }
+        if (bahasaIndonesia >= 0 && bahasaInggis >= 0 && matematika >= 0 && ipa >= 0) {
+            if (bahasaIndonesia <= 100 && bahasaInggis <= 100 && matematika <= 100 && ipa <= 100) {
+                const totalNilai = (bahasaIndonesia + bahasaInggis + matematika + ipa) /
+                    4 //Menunakan urutan operasi matematika
+                if (totalNilai >= 90) {
+                    document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = A</p>`)
+                } else if (totalNilai >= 80) {
+                    document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = B</p>`)
+                } else if (totalNilai >= 79) {
+                    document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = C</p>`)
+                } else if (totalNilai >= 69) {
+                    document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = D</p>`)
+                } else {
+                    document.writeln(`<p>Nilai rata-rata = ${totalNilai} <br> Grade = E</p>`)
+                }
             } else {
                 alert('data yang diinputkan tidak boleh lebih dari 100')
             }
         } else {
             alert('Semua data harus diisi')
         }
-
     </script>
 </body>
+
 </html>
